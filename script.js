@@ -28,49 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleSuccessSection('done-order', 'close-successfull', '.success-section');
 });
 
-// let index = 0;
-// const slides = document.querySelectorAll('.m-banner');
-// const totalSlides = slides.length;
-// const dots = document.querySelectorAll('.dot');
-
-// function moveSlide(step) {
-//     index += step;
-
-//     if (index < 0) {
-//         index = totalSlides - 1; 
-//     } else if (index >= totalSlides) {
-//         index = 0; 
-//     }
-
-//     updateSlider();
-// }
-
-// function updateSlider() {
-//     const slider = document.querySelector('.slider-banner');
-//     const offset = -index * 100;
-//     slider.style.transform = `translateX(${offset}%)`;
-
-//     for (let i = 0; i < dots.length; i++) {
-//         if (i === index) {
-//             dots[i].classList.add('active');
-//         } else {
-//             dots[i].classList.remove('active');
-//         }
-//     }
-// }
-
-// function currentSlide(n) {
-//     index = n;
-//     updateSlider();
-// }
-
-// setInterval(() => {
-//     moveSlide(1); 
-// }, 10000);
-
-// updateSlider(); 
-
-
 const swiper = new Swiper('.swiper', {  // Đảm bảo rằng đây là '.swiper' để khởi tạo chính xác
     // Optional parameters
     direction: 'horizontal',  // Sửa lại direction nếu bạn muốn chuyển đổi theo chiều ngang
@@ -333,3 +290,4 @@ document.addEventListener("DOMContentLoaded", () => {
   onlyAllowPhoneNumberInput(document.getElementById("phone-add"));
   onlyAllowPhoneNumberInput(document.getElementById("phone-acc"));
 });
+

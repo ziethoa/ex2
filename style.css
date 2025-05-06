@@ -203,6 +203,10 @@ li{
     z-index: 1;
 }
 
+.header .navbar-menu .list-menu li .user-container .user-content.show{
+    display: none;
+}
+
 .header .navbar-menu .list-menu li .user-container .user-content a{
     display: flex;
     align-items: center;
@@ -8005,6 +8009,53 @@ body.showSuccess main::before{
         row-gap: 10px;
     }
 
+    /* successfull payment */
+    .success-section {
+        width: 480px;
+        transform: translate(-50%, -62%);
+    }
+
+    .success-section .success-content {
+        row-gap: 15px;
+        padding: 20px 30px;
+        border-radius: 10px;
+    }
+    
+    .success-section .success-content .close {
+        font-size: 14px;
+        top: -25px;
+        right: -25px;
+    }
+
+    .success-section .success-content .image {
+        width: 80px;
+    }
+
+    .success-section .success-content h3 {
+        font-size: 20px;
+    }
+
+    .success-section .success-content p {
+        font-size: 14px;
+    }
+
+    .success-section .success-content .p-1 {
+        text-align: center;
+    }
+
+    .success-section .success-content .p-3 span {
+        font-size: 16px;
+    }
+
+    .success-section .success-content a button {
+        font-size: 14px;
+    }
+
+    .success-section .success-content a {
+        padding: 10px 15px;
+    }
+
+
     /* account section */
     .account .account-content .account-info {
         margin: 60px 0px 40px;
@@ -9006,6 +9057,16 @@ body.showSuccess main::before{
 
     .shop-section .best-seller .best-seller-title h2 {
         font-size: 30px;
+    }
+
+    /* success section */
+    .success-section .success-content p {
+        line-height: 145%;
+    }
+
+    .success-section {
+        width: 360px;
+        transform: translate(-50%, -92%);
     }
 
     /* account section */
@@ -10551,6 +10612,49 @@ body.showSuccess main::before{
 
     .payment-section .payment-method .button .back p {
         font-size: 11px;
+    }
+
+    /* successfull payment */
+    .success-section {
+        width: 270px;
+        transform: translate(-50%, -62%);
+    }
+
+    .success-section .success-content {
+        row-gap: 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .success-section .success-content .close {
+        font-size: 11px;
+        top: -20px;
+        right: -20px;
+        padding: 3px 4px;
+    }
+
+    .success-section .success-content .image {
+        width: 50px;
+    }
+
+    .success-section .success-content h3 {
+        font-size: 18px;
+    }
+
+    .success-section .success-content p {
+        font-size: 12px;
+    }
+
+    .success-section .success-content .p-3 span {
+        font-size: 14px;
+    }
+
+    .success-section .success-content a button {
+        font-size: 12px;
+    }
+
+    .success-section .success-content a {
+        padding: 5px 10px;
     }
 
     /* account section */
