@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>82X</title>
+</head>
+<body>
+    <!-- header section -->
+     <header class="header">
+        <div class="navbar">
+            <div class="logo"><img src="assets/logo.png" alt="logo"></div>
+            <div class="navbar-list">
+                <ul class="list">
+                    <li><div class="close-menu"><i class="fa-solid fa-xmark"></i></div></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="Reference.html">Giới thiệu</a></li>
+                    <li><a href="Product.html">Sản phẩm</a></li>
+                    <li><a href="News.html">Tin tức</a></li>
+                    <li><a href="Client-program.html">Chương trình khách hàng</a></li>
+                    <li><a href="Find-shop.html">Tìm điểm bán</a></li>
+                </ul>
+            </div>
+            <div class="navbar-menu">
+                <ul class="list-menu">
+                    <li>
+                        <div class="user-container">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="user-content">
+                                <a href="My-order.html"><i class="fa-solid fa-circle"></i> Đơn hàng của tôi</a>
+                                <a href="Account.html"><i class="fa-solid fa-circle"></i> Tài khoản</a>
+                                <a href="#"><i class="fa-solid fa-circle"></i> Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="Shop.html">
+                            <i class="fa-solid fa-bag-shopping shopping">
+                                <p class="amount">10</p>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </header>
+    <!-- main section-->
+    <main>
+        <!-- payment section -->
+        <section class="payment-section news-section">
+            <div class="payment-content news-content">
+                <div class="payment-home news-home">
+                    <h1>Giỏ hàng</h1>
+                    <p>Trang chủ <i class="fa-solid fa-caret-right"></i> Giỏ hàng <i class="fa-solid fa-caret-right"></i> Thanh toán</p>
+                </div>
+
+                <div class="payment-detail">
+                    <div class="payment-login-method">
+                        <div class="payment-login">
+                            <p>Bạn chưa có tài khoản? <a href="#">Đăng nhập</a></p>
+                            <input type="text" placeholder="Họ và tên *" required>
+                            <input type="tel" id="phone-pay" placeholder="Số điện thoại *" required>
+                            <input type="text" placeholder="Địa chỉ *" required>
+                            <select class="select" name="option">
+                                <option value="" disabled selected>Thành phố</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                            <select class="select" name="option">
+                                <option value="" disabled selected>Chọn Quận/Huyện</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <select class="select" name="option">
+                                <option value="" disabled selected>Chọn Phường/Xã</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                        <div class="payment-method">
+                            <h3>Phương thức thanh toán</h3>
+                            <div class="option">
+                                <p>
+                                    <input type="radio" name="payment" value="live" checked><label>Thanh toán khi nhận hàng</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="payment" value="vnpay"><label>Thanh toán qua VNPAY</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="payment" value="momo"><label>Thanh toán qua MOMO</label>
+                                </p>
+                                <p>
+                                    <input type="radio" name="payment" value="other"><label>Online payment by Visa, Master Card, ...</label>
+                                    <img src="assets/onepay.png" alt="one pay" class="one-pay">
+                                    <img src="assets/other-pay.png" alt="other pay" class="other-pay">
+                                </p>
+                            </div>
+                            <div class="button">
+                                <a href="Shop.html" class="back">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <p>Trở về giỏ hàng</p>
+                                </a>
+                                <div class="done" id="done-order"><button>Hoàn tất đơn hàng</button></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="payment-total">
+                        <div class="list-items">
+                            <div class="pro-item-pay">
+                                <div class="title">
+                                    <img src="assets/shop-product.png" alt="product">
+                                    <div class="info">
+                                        <p>82X Shiharu Collagen - Hộp 10 lon</p>
+                                        <p class="quantity">Số lượng: 2</p>
+                                    </div>
+                                </div>
+                                <p class="price">1.580.000 vnđ</p>
+                            </div>
+                            <div class="pro-item-pay">
+                                <div class="title">
+                                    <img src="assets/shop-product.png" alt="product">
+                                    <div class="info">
+                                        <p>82X Shiharu Collagen - Hộp 10 lon</p>
+                                        <p class="quantity">Số lượng: 2</p>
+                                    </div>
+                                </div>
+                                <p class="price">1.580.000 vnđ</p>
+                            </div>
+                            <div class="pro-item-pay">
+                                <div class="title">
+                                    <img src="assets/shop-product.png" alt="product">
+                                    <div class="info">
+                                        <p>82X Shiharu Collagen - Hộp 10 lon</p>
+                                        <p class="quantity">Số lượng: 2</p>
+                                    </div>
+                                </div>
+                                <p class="price">1.580.000 vnđ</p>
+                            </div>
+                        </div>
+                        <div class="discount-shipment">
+                            <div class="d-s-info">
+                                <p class="title-temp">Tạm tính</p>
+                                <p class="price-temp">4.740.000 vnđ</p>
+                            </div>
+                            <div class="d-s-input">
+                                <input type="text" placeholder="Nhập mã giảm giá">
+                                <a href="#" class="apply"><button>Áp dụng</button></a>
+                            </div>
+                            <div class="d-s-info">
+                                <p class="title-temp">Phí vận chuyển</p>
+                                <p class="price-temp">Miễn phí</p>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            <p>Tổng tiền thanh toán</p>
+                            <h2>4.740.000 vnđ</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <ul class="social-media">
+                        <li class="item"><a href="#"><img src="assets/icon-zalo.png" alt="zalo"></a></li>
+                        <li class="item"><a href="#"><img src="assets/icon-mess.png" alt="messenger"></a></li>
+                        <li class="item"><a href="#"><img src="assets/icon-phone.png" alt="phone number"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <section class="footer">
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <ul class="navbar-first">
+                        <li class="item"><a href="index.html">Trang chủ</a></li>
+                        <li class="item"><a href="Reference.html">Giới thiệu</a></li>
+                        <li class="item"><a href="Product.html">Sản phẩm</a></li>
+                        <li class="item"><a href="News.html">Tin tức</a></li>
+                    </ul>
+                    <a href="#" class="logo-border"><img src="assets/logo-footer.png" alt="logo" class="logo"></a>
+                    <ul class="navbar-last">
+                        <li class="item"><a href="Loyal-customer.html">Khách hàng thân thiết</a></li>
+                        <li class="item"><a href="Policy.html">Chính sách</a></li>
+                        <li class="item"><a href="Contact.html">Liên hệ</a></li>
+                    </ul>
+                    <img src="assets/border-1.png" alt="" class="border-1">
+                    <img src="assets/border-2.png" alt="" class="border-2">
+                </div>
+                <div class="footer-nav-ipad">
+                    <ul class="navbar">
+                        <li class="item"><a href="index.html">Trang chủ</a></li>
+                        <li class="item"><a href="Reference.html">Giới thiệu</a></li>
+                        <li class="item"><a href="Product.html">Sản phẩm</a></li>
+                        <li class="item"><a href="News.html">Tin tức</a></li>
+                        <li class="item"><a href="Loyal-customer.html">Khách hàng thân thiết</a></li>
+                        <li class="item"><a href="Policy.html">Chính sách</a></li>
+                        <li class="item"><a href="Contact.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <div class="reference">
+                        <h3>Công ty cổ phần Lychee</h3>
+                        <p>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i>Trụ sở: Tầng 8, Toà nhà Sao Mai, 
+                            19 Lê Văn Lương, phường Nhân Chính, quận Thanh Xuân, Hà Nội</a>
+                        </p>
+                        <p>
+                            <a href="#"><i class="fa-solid fa-location-dot"></i>Văn phòng đại diện: 171 Phạm Huy Thông, 
+                            Phường 6, Quận Gò Vấp, TP.Hồ Chí Minh</a>
+                        </p>
+                    </div>
+                    <div class="link">
+                        <h3>Liên kết hữu ích</h3>
+                        <ul>
+                            <li><a href="#">➔ Giới thiệu 82X</a></li>
+                            <li><a href="#">➔ Trở thành đối tác</a></li>
+                            <li><a href="#">➔ Tuyển dụng</a></li>
+                            <li><a href="#">➔ Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="connect">
+                        <h3>Kết nối với chúng tôi</h3>
+                        <ul class="social-list">
+                            <li><a href="#"><img src="assets/facebook.png" alt="facebook" class="facebook"></a></li>
+                            <li><a href="#"><img src="assets/youtube-logo.png" alt="youtube"></a></li>
+                            <li><a href="#"><img src="assets/tiktok.png" alt="tiktok"></a></li>
+                            <li><a href="#"><img src="assets/insta.png" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="item hotline">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <div class="text">
+                            <p>Hotline:</p>
+                            <a href="#">02899989993 - 18009232</a>
+                        </div>
+                    </div>
+                    <div class="item email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="text">
+                            <p>Email:</p>
+                            <a href="#">info@lychee.biz.vn</a>
+                        </div>
+                    </div>
+                    <div class="item website">
+                        <i class="fa-solid fa-globe"></i>
+                        <div class="text">
+                            <p>Website:</p>
+                            <a href="#">www.82xbeauty.vn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice">
+                    <p>*Sản phẩm không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh</p>
+                </div>
+                <div class="license">
+                    <a href="#"><img src="assets/license-notice.png" alt="thong bao"></a>
+                    <a href="#"><img src="assets/license-dmca-protected.png" alt="dcma"></a>
+                </div>
+                <div class="copyright">
+                    <a href="#">Copyright 2022 © 82x All rights reserved.</a>
+                </div>
+                <div class="chat-now">
+                    <a href="#">
+                        <i class="fa-solid fa-message"></i>
+                        <p>Chat ngay với chúng tôi!</p></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- successfull payment-->        
+        <div class="success-section">
+            <div class="success-content">
+                <div class="image"><img src="assets/success.png" alt="successful"></div>
+                <h3>Đặt hàng thành công</h3>
+                <p class="p-1">Cảm ơn <span>Quý khách</span> đã quan tâm và đặt sản phẩm tại 82x</p>
+                <p class="p-2">Đơn hàng số <span>82x1586</span> đã được tạo thành công. 
+                    Chúng tôi sẽ liên hệ với bạn trong vòng 30 phút và cam kết giao hàng miễn phí các sản phẩm tại 82x. 
+                    </p>
+                <p class="p-3">Tổng đài tư vấn: <span>1800.9232</span></p>
+                <a href="index.html"><button>Trở về trang chủ</button></a>
+                <i class="fa-solid fa-xmark close" id="close-successfull"></i>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

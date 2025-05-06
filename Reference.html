@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- header section -->
-     <header class="header">
+    <header class="header">
         <div class="navbar">
             <div class="logo"><img src="assets/logo.png" alt="logo"></div>
             <div class="navbar-list">
@@ -25,9 +25,17 @@
                 </ul>
             </div>
             <div class="navbar-menu">
-                
                 <ul class="list-menu">
-                    <li class="user"><a href="User.html" ><i class="fa-solid fa-user"></i></a></li>
+                    <li>
+                        <div class="user-container">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="user-content">
+                                <a href="My-order.html"><i class="fa-solid fa-circle"></i> Đơn hàng của tôi</a>
+                                <a href="Account.html"><i class="fa-solid fa-circle"></i> Tài khoản</a>
+                                <a href="Logout.html"><i class="fa-solid fa-circle"></i> Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="Shop.html">
                             <i class="fa-solid fa-bag-shopping shopping">
                                 <p class="amount">10</p>
@@ -258,11 +266,18 @@
                         <div class="input-list">
                             <div class="name-phone">
                                 <div class="name"><input type="text" placeholder="Họ và tên" required ></input></div>
-                                <div class="phone"><input type="text" placeholder="Số điện thoại" required ></input></div>
+                                <div class="phone"><input type="tel" id="phone-ref" placeholder="Số điện thoại" required ></input></div>
                             </div>
                             <div class="info"><input type="text" placeholder="Thông tin cần tư vấn ..." ></input></div>
                         </div>
                         <a href="#" class="submit"><button><i class="fa-solid fa-paper-plane"></i><p>Gửi yêu cầu</p></button></a>
+                    </div>
+                    <div class="contact-social">
+                        <ul class="social-media">
+                            <li class="item"><a href="#"><img src="assets/icon-zalo.png" alt="zalo"></a></li>
+                            <li class="item"><a href="#"><img src="assets/icon-mess.png" alt="messenger"></a></li>
+                            <li class="item"><a href="#"><img src="assets/icon-phone.png" alt="phone number"></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

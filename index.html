@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- header section -->
-     <header class="header">
+    <header class="header">
         <div class="navbar">
             <div class="logo"><img src="assets/logo.png" alt="logo"></div>
             <div class="navbar-list">
@@ -25,9 +25,17 @@
                 </ul>
             </div>
             <div class="navbar-menu">
-                
                 <ul class="list-menu">
-                    <li class="user"><a href="User.html" ><i class="fa-solid fa-user"></i></a></li>
+                    <li>
+                        <div class="user-container">
+                            <i class="fa-solid fa-user"></i>
+                            <div class="user-content">
+                                <a href="my-order.html"><i class="fa-solid fa-circle"></i> Đơn hàng của tôi</a>
+                                <a href="account.html"><i class="fa-solid fa-circle"></i> Tài khoản</a>
+                                <a href="logout.html"><i class="fa-solid fa-circle"></i> Đăng xuất</a>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="Shop.html">
                             <i class="fa-solid fa-bag-shopping shopping">
                                 <p class="amount">10</p>
@@ -63,11 +71,7 @@
         <!-- mid banner section -->
         <section class="mid-banner">
             <div class="mid-banner-content">
-                <div class="mid-banner-text">
-                    <h2 class="title">Kiểm Tra Nhanh</h2>
-                    <h3 class="mid-title">cùng chuyên gia 82X AI</h3>
-                    <p>để hiểu về sức khỏe nữ và làn da của bạn</p>
-                </div>
+                <img src="assets/mid-banner.png" alt="">
                 <div class="list-button">
                     <button class="button"><a href="#">Kiểm tra sức khỏe làn da</a></button>
                     <button class="button"><a href="#">Kiểm tra sức khỏe nữ</a></button>
@@ -126,26 +130,17 @@
                 </div>
                 <div class="brand">
                     <div class="brand-content">
-                        <img src="assets/brand.png" alt="brand-img">
+                        <img src="assets/brand.png" alt="brand-img" class="brand-image">
                         <div class="brand-text">
-                            <div class="text-1">
-                                <div class="icon"><img src="assets/title-info.png" alt="japan"></div>
-                                <div class="cc-th">
-                                    <h2>Câu chuyện</h2>
-                                    <h1>thương hiệu</h1>
-                                </div>
-                            </div>
-                            <div class="text-2">
-                                <p class="text">Lấy cảm hứng từ triết lý OUBAITORI, 82X trân trọng vẻ đẹp tự nhiên, 
+                                <p class="text" id="text-limit">Lấy cảm hứng từ triết lý OUBAITORI, 82X trân trọng vẻ đẹp tự nhiên, 
                                     nguyên bản của con người. 82X tin rằng ở mỗi thời điểm khác nhau, 
                                     người phụ nữ sẽ đẹp theo cách riêng nhưng là phiên bản tốt nhất và 
                                     hạnh phúc nhất của chính mình. Với hai dòng sản phẩm 82X Beauty Drink 
                                     và 82X Skincare, 82X mang đến công thức chăm sóc hoàn hảo từ trong ra 
-                                    ngoài cho mỗi người phụ nữ bằng các nguyên liệu tinh túy và công nghệ... <a href="#">Xem thêm</a></p>
-                                    <a href="#" class="aa">Xem thêm</a>
-                            </div>
-                            </div>
+                                    ngoài cho mỗi người phụ nữ bằng các nguyên liệu tinh túy và công nghệ...<a href="#">Xem thêm</a>
+                                </p>
                         </div>
+                    </div>
                 </div>
                 <div class="news-events">
                     <div class="news-events-content">
