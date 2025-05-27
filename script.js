@@ -1,11 +1,34 @@
-const openMenu = document.querySelector(".menu");
-const closeMenu = document.querySelector(".close-menu")
+function setupMenuToggle(menuSelector, closeSelector, navSelector) {
+    const openMenu = document.querySelector(menuSelector);
+    const closeMenu = document.querySelector(closeSelector);
+    const navBar = document.querySelector(navSelector);
 
-openMenu.addEventListener('click', () =>{
-    document.body.classList.toggle("showMenu");
-})
+    if (!openMenu || !closeMenu || !navBar) {
+        console.error("Không tìm thấy phần tử DOM.");
+        return;
+    }
 
-closeMenu.addEventListener("click", () =>openMenu.click());
+    openMenu.addEventListener('click', () => {
+        document.body.classList.toggle("showMenu");
+    });
+
+    closeMenu.addEventListener("click", () => openMenu.click());
+
+    // Click ngoài nav-bar thì ẩn menu
+    document.addEventListener("click", (e) => {
+        const isClickInsideNav = navBar.contains(e.target);
+        const isClickOnToggleBtn = openMenu.contains(e.target) || closeMenu.contains(e.target);
+
+        if (!isClickInsideNav && !isClickOnToggleBtn) {
+            document.body.classList.remove("showMenu");
+        }
+    });
+}
+
+// Gọi hàm khi DOM đã sẵn sàng
+document.addEventListener("DOMContentLoaded", () => {
+    setupMenuToggle(".menu", ".close-menu", ".navbar");
+});
 
 function toggleSuccessSection(doneOrderId, closeSuccessId, successSectionSelector) {
   const doneOrder = document.getElementById(doneOrderId);
@@ -32,7 +55,11 @@ const swiper = new Swiper('.swiper', {  // Đảm bảo rằng đây là '.swipe
     // Optional parameters
     direction: 'horizontal',  // Sửa lại direction nếu bạn muốn chuyển đổi theo chiều ngang
     loop: true,
-
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    
     // Pagination
     pagination: {
         el: '.swiper-pagination',
@@ -290,4 +317,46 @@ document.addEventListener("DOMContentLoaded", () => {
   onlyAllowPhoneNumberInput(document.getElementById("phone-add"));
   onlyAllowPhoneNumberInput(document.getElementById("phone-acc"));
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const contactSocial = document.querySelector('.contact-social');
+  
+  // Kiểm tra xem phần tử có tồn tại không
+  if (contactSocial) {
+      // Thêm position: fixed thông qua JavaScript
+      contactSocial.style.position = 'fixed';
+      contactSocial.style.bottom = '20px';
+      contactSocial.style.right = '20px';
+      contactSocial.style.zIndex = '1000';
+      
+      // Thêm hiệu ứng mượt mà khi cuộn
+      window.addEventListener('scroll', function() {
+          // Có thể thêm logic bổ sung nếu cần điều chỉnh vị trí động
+          // Ví dụ: thay đổi vị trí khi cuộn đến một phần cụ thể
+      });
+  }
+});
+
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav: true,
+  dots: false,
+  responsive:{
+      0:{
+          items:1
+      },
+      650:{
+          items:2
+      },
+      1140:{
+          items:3
+    },
+    1850: {
+        items: 4
+      }
+  }
+})
 

@@ -103,12 +103,12 @@ li{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 0 30px;
 }
 
-.header .navbar .navbar-list .list li{
-    list-style: none;    
+.header .navbar .navbar-list .list li {
+    list-style: none;
     text-align: center;
 }
 
@@ -1464,51 +1464,33 @@ li{
     padding-bottom: 40px;
 }
 
-.reference-section .customer-content .customer-list{
+.customer-list{
     width: 100%;
-    padding-bottom: 8%;
 }
 
-.reference-section .customer-content .customer-list .customer-item-list{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-radius: 10px;
-    grid-column-gap: 20px;
+.customer-item{
+    width: auto;
+    height: 400px;
 }
 
-.reference-section .customer-list .customer-item-list .customer-item{
-    width: 100%;
-    text-decoration: none;
+.item-img{
+    width: 80%;
+    height: fit-content;
     position: relative;
 }
 
-.reference-section .customer-list .customer-item-list .customer-item img{
-    width: 100%;
-}
-
-.reference-section .customer-item-list .customer-item .desc{
-    width: 92%;
+.content-text{
+    width: 78%;
     background-color: rgb(255, 255, 255, 0.9);
     border: 2px solid #fff;
     border-radius: 13.8px;
-    padding: 20px 15px;
+    padding: 20px 15px 10px;
     position: absolute;
     left: 10%;
-    bottom: -18%;
+    bottom: 1%;
 }
 
-.reference-section .customer-item-list .customer-item .desc::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 20px;
-    width: 6px;
-    height: 18px;
-    background-color: rgba(0, 0, 155, 1);
-}
-
-.reference-section .customer-item-list .customer-item .desc h2{
+.content-text h2{
     width: 100%;
     font-size: 20px;
     font-weight: 600;
@@ -1517,7 +1499,7 @@ li{
     padding-bottom: 10px;
 }
 
-.reference-section .customer-item-list .customer-item .desc p{
+.content-text p{
     width: 100%;
     font-size: 14px;
     font-weight: 400;
@@ -1530,42 +1512,31 @@ li{
     -webkit-box-orient: vertical;
 }
 
-.reference-section .customer-item-list .customer-item .desc p i{
+.content-text p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 6px;
+    height: 18px;
+    background-color: rgba(0, 0, 155, 1);
+}
+
+.content i{
     color: rgba(0, 0, 155, 1);
 }
 
-.reference-section .customer-content .pagination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.customer-list .owl-prev, .customer-list .owl-next{
+    font-size: 50px!important;
+    color: rgba(0, 0, 155, 1)!important;
+    margin: 10px 30px !important;
 }
 
-.reference-section .customer-content .pagination #cusprev-btn, 
-.reference-section .customer-content .pagination #cusnext-btn {
-    cursor: pointer;
-    color: rgba(193, 193, 193, 1);
-    font-size: 30px;
+.customer-list .owl-prev span,
+.customer-list .owl-next span{
+    padding: 15px 20px !important;
 }
 
-.reference-section .customer-content .pagination #cusprev-btn:hover, 
-.reference-section .customer-content .pagination #cusnext-btn:hover {
-    color: rgba(0, 0, 155, 1);
-}
-
-.reference-section .customer-content .pagination .page-info #cuscurrent-page {
-    font-size: 30px;
-    color: rgba(0, 0, 155, 1);
-    font-weight: 600;
-    line-height: 129%;
-}
-
-.reference-section .customer-content .pagination .page-info #custotal-pages {
-    font-size: 18px;
-    color: rgba(153, 153, 153, 1);
-    font-weight: 600;
-    line-height: 129%;
-}
 
 /* advise */
 .reference-section .advise{
@@ -1737,17 +1708,23 @@ li{
     padding-bottom: 15px;
 }
 
-.product-section .product-content .product-home p{
+.product-section .product-content .product-home .title-a{
     width: 100%;
-    text-align: center;
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-section .product-content .product-home .title-a a{
+    font-size: 14px;
     font-weight: 400;
     line-height: 100%;
     color: rgba(51, 51, 51, 1);
 }
 
-.product-section .product-content .product-home p i{
-    font-size: 11px;
+.product-section .product-content .product-home .title-a i{
+    font-size: 12px;
     color: rgba(136, 136, 136, 1);
 }
 
@@ -2224,17 +2201,24 @@ li{
     padding-bottom: 15px;
 }
 
-.news-section .news-content .news-home p{
+.news-section .news-content .news-home .title-a {
     width: 100%;
-    text-align: center;
-    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.news-section .news-content .news-home .title-a a {
+    font-size: 14px;
     font-weight: 400;
     line-height: 100%;
     color: rgba(51, 51, 51, 1);
 }
 
-.news-section .news-content .news-home p i{
-    font-size: 11px;
+.news-section .news-content .news-home .title-a i {
+    font-size: 12px;
     color: rgba(136, 136, 136, 1);
 }
 
@@ -2291,7 +2275,7 @@ li{
 .news-section .lastest-article .main-lastest-article .image .text{
     width: 80%;
     padding: 25px 30px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     border: 2px solid #fff;
     border-radius: 10px;
     position: absolute;
@@ -3480,15 +3464,7 @@ li{
     color: rgba(0, 0, 155, 1);
 }
 
-.find-shop-section .find-shop-content .shop-system .shop-system-map {
-    width: 60%;
-    height: 100%;
-}
 
-.find-shop-section .find-shop-content .shop-system .shop-system-map img{
-    width: 100%;
-    height: 100%;
-}
 
 .find-shop-section .find-shop-content .brand-fashion{
     width: 100%;
@@ -3807,6 +3783,7 @@ li{
     line-height: 100%;
     text-transform: uppercase;
     color: rgba(0, 0, 155, 1);
+    white-space: nowrap;
 }
 
 .shop-section .shop-detail .shop-detail-payment .button-payment .button:hover{
@@ -6154,14 +6131,6 @@ body.showSuccess main::before{
     background-color: #3be2f8;
 }
 
-
-
-
-
-
-
-
-
 /* responsive */
 @media screen and (max-width: 1140px) {
     /* header section */
@@ -6176,7 +6145,7 @@ body.showSuccess main::before{
         background: rgba(0, 0, 0, 0.2);
     }
 
-    .header .navbar .navbar-list.showMenu::before{
+    .header .navbar .navbar-list.showMenu{
         content: "";
         position: fixed;
         top: 0;
@@ -6200,12 +6169,22 @@ body.showSuccess main::before{
 
     .header .navbar .navbar-list .list{
         flex-direction: column;
-        align-items: center;
         row-gap: 30px;
     }
 
+    .header .navbar .navbar-list .list li {
+        width: 100%;
+    }
+
     .header .navbar .navbar-list .list .close-menu{
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .navbar-list .list li .nav-img-mobile{
+        width: 30px;
+        text-decoration: none !important;
     }
 
     .header .navbar-menu .list-menu .menu{
@@ -6410,14 +6389,6 @@ body.showSuccess main::before{
 
     .reference-section .customer .customer-content {
         padding: 30px 50px;
-    }
-
-    .reference-section .customer-item-list .customer-item .desc p {
-        -webkit-line-clamp: 3;
-    }
-
-    .reference-section .customer-item-list .customer-item .desc h2 {
-        font-size: 18px;
     }
 
     .reference-section .advise .advise-content {
@@ -7016,34 +6987,35 @@ body.showSuccess main::before{
         padding-bottom: 30px;
     }
 
-    .reference-section .customer-item-list .customer-item .desc {
-        position: relative;
-        bottom: 30px;
+    .customer-item {
+        height: 365px;
     }
 
-    .reference-section .customer-content .customer-list {
-        padding-bottom: 0;
+    .item-img {
+        width: 85%;
     }
 
-    .reference-section .customer-item-list .customer-item .desc h2 {
-        font-size: 16px;
+    .content-text {
+        padding: 15px 10px 5px;
     }
 
-    .reference-section .customer-item-list .customer-item .desc p {
+    .content-text h2 {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    .content-text p {
         font-size: 12px;
+        -webkit-line-clamp: 3;
     }
 
-    .reference-section .customer-content .pagination #cusprev-btn, 
-    .reference-section .customer-content .pagination #cusnext-btn {
-        font-size: 25px;
+    .customer-list .owl-prev, .customer-list .owl-next {
+        font-size: 40px!important;
+        margin: 5px 20px !important;
     }
 
-    .reference-section .customer-content .pagination .page-info #cuscurrent-page {
-        font-size: 25px;
-    }
-
-    .reference-section .customer-content .pagination .page-info #custotal-pages {
-        font-size: 16px;
+    .customer-list .owl-prev span, .customer-list .owl-next span {
+        padding: 5px 10px !important;
     }
 
     .reference-section .advise .advise-content h1 {
@@ -7094,12 +7066,12 @@ body.showSuccess main::before{
         padding-bottom: 10px;
     }
 
-    .product-section .product-content .product-home p {
-        font-size: 11px;
+    .product-section .product-content .product-home .title-a a {
+        font-size: 12px;
     }
 
-    .product-section .product-content .product-home p i {
-        font-size: 9px;
+    .product-section .product-content .product-home .title-a i {
+        font-size: 10px;
     }
 
     .product-section .product-content {
@@ -7252,12 +7224,12 @@ body.showSuccess main::before{
         padding-bottom: 10px;
     }
 
-    .news-section .news-content .news-home p {
-        font-size: 11px;
+    .news-section .news-content .news-home .title-a a {
+        font-size: 12px;
     }
 
-    .news-section .news-content .news-home p i {
-        font-size: 9px;
+    .news-section .news-content .news-home .title-a i {
+        font-size: 10px;
     }
 
     .news-section .news-content .news-home .main-news-banner {
@@ -8803,14 +8775,6 @@ body.showSuccess main::before{
         background-size: 85% auto;
     }
 
-    .reference-section .customer-item-list .customer-item .desc {
-        width: 100%;
-        padding: 10px 10px;
-        position: relative;
-        left: 0;
-        bottom: 0;
-    }
-
     .reference-section .advise .advise-content .advise-list {
         flex-direction: column;
     }
@@ -9585,13 +9549,13 @@ body.showSuccess main::before{
     .reference-section .technology .tech-content .list-tech .list-first {
         justify-content: center;
         flex-wrap: wrap;
-        row-gap: 40px;
+        row-gap: 100px;
         padding-top: 18%;
     }
 
     .reference-section .technology .tech-content .list-tech .list-last {
-        padding-top: 40px;
-        row-gap: 40px;
+        padding-top: 100px;
+        row-gap: 100px;
     }
 
     .reference-section .technology .tech-content .tech-item {
@@ -9606,33 +9570,39 @@ body.showSuccess main::before{
     .reference-section .customer .customer-content h1 {
         font-size: 30px;
         padding-bottom: 20px;
-    }  
-
-    .reference-section .customer-content .customer-list .customer-item-list {
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 20px;
     }
 
-    .reference-section .customer-content .pagination {
-        gap: 15px;
-        padding-top: 20px;
+    .customer-item {
+        height: auto;
     }
 
-    .reference-section .customer-content .pagination #cusprev-btn, 
-    .reference-section .customer-content .pagination #cusnext-btn {
-        font-size: 20px;
+    .content-text h2 {
+        font-size: 16px;
+        padding-bottom: 5px;
     }
 
-    .reference-section .customer-content .pagination .page-info #cuscurrent-page {
-        font-size: 20px;
+    .customer-item a{
+        display: flex;
+        gap: 10px;
     }
-    
-    .reference-section .customer-content .pagination .page-info #custotal-pages {
-        font-size: 14px;
+
+    .content-text {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    .content-text p {
+        font-size: 11px;
+        -webkit-line-clamp: 5;
+    }
+
+    .customer-list .owl-prev, .customer-list .owl-next {
+        display: none!important;
     }
 
     .reference-section .customer {
-        padding-bottom: 25px;
+        padding-bottom: 20px;
     }
 
     .reference-section .advise .advise-content {
@@ -9706,12 +9676,12 @@ body.showSuccess main::before{
         padding-bottom: 7px;
     }
 
-    .product-section .product-content .product-home p {
-        font-size: 9px;
+    .product-section .product-content .product-home .title-a a {
+        font-size: 10px;
     }
 
-    .product-section .product-content .product-home p i{
-        font-size: 7px;
+    .product-section .product-content .product-home .title-a i {
+        font-size: 8px;
     }
 
     .product-section .product-content .product-home .pro-nav {
@@ -9818,12 +9788,12 @@ body.showSuccess main::before{
         padding-bottom: 5px;
     }
 
-    .news-section .news-content .news-home p {
-        font-size: 9px;
+    .news-section .news-content .news-home .title-a a {
+        font-size: 10px;
     }
 
-    .news-section .news-content .news-home p i{
-        font-size: 7px;
+    .news-section .news-content .news-home .title-a i {
+        font-size: 8px;
     }
 
     .news-section .news-content .news-home .main-news-banner {
@@ -10180,7 +10150,7 @@ body.showSuccess main::before{
         font-size: 14px;
         padding: 12px 0 4px;
     }
-.news-item-section .post-list .news-suggested-item .tt {
+    .news-item-section .post-list .news-suggested-item .tt {
         width: 90%;
         left: 8px;
         bottom: 10px;

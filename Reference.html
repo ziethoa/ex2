@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>82X</title>
 </head>
@@ -15,7 +17,12 @@
             <div class="logo"><img src="assets/logo.png" alt="logo"></div>
             <div class="navbar-list">
                 <ul class="list">
-                    <li><div class="close-menu"><i class="fa-solid fa-xmark"></i></div></li>
+                    <li>
+                        <div class="close-menu">
+                            <a href="index.html" class="nav-img-mobile"><img src="assets/logo.png" alt="Logo"></a>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </li>
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="Reference.html" class="active">Giới thiệu</a></li>
                     <li><a href="Product.html">Sản phẩm</a></li>
@@ -191,71 +198,75 @@
             <div class="customer">
                 <div class="customer-content">
                     <h1>Khách hàng nói gì về 82X?</h1>
-                    <div class="customer-list">
-                        <div class="customer-item-list">
-                            <a href="#" class="customer-item">
-                                <img src="assets/customer-1.png" alt="customer 1">
-                                <div class="desc">
+                    <div class="customer-list owl-carousel owl-theme">
+                        <div class="customer-item item">
+                            <a href="#">
+                                <div class="item-img">
+                                    <img src="assets/customer-1.png" alt="customer-1">
+                                </div>
+                                <div class="content-text">
                                     <h2>Hoa hậu Hương Giang</h2>
-                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng 
-                                        và hạnh phúc khi được sử dụng sản phẩm của 82x, 
-                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum 
+                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng
+                                        và hạnh phúc khi được sử dụng sản phẩm của 82x,
+                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum
                                         dolor sit amet consectetur adipisicing elit. Dignissimos dolores
-                                         obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
-                                         <i class="fa-solid fa-quote-right"></i>
-                                        </p>
+                                        obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
                                 </div>
                             </a>
-
-                            <a href="#" class="customer-item">
-                                <img src="assets/customer-2.png" alt="customer 1">
-                                <div class="desc">
+                        </div>
+                        <div class="customer-item item">
+                            <a href="#">
+                                <div class="item-img">
+                                    <img src="assets/customer-2.png" alt="customer-2">
+                                </div>
+                                <div class="content-text">
                                     <h2>Hồ Ngọc Hà</h2>
-                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng 
-                                        và hạnh phúc khi được sử dụng sản phẩm của 82x, 
-                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum 
+                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng
+                                        và hạnh phúc khi được sử dụng sản phẩm của 82x,
+                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum
                                         dolor sit amet consectetur adipisicing elit. Dignissimos dolores
-                                         obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
-                                         <i class="fa-solid fa-quote-right"></i>
-                                        </p>
+                                        obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
                                 </div>
                             </a>
-
-                            <a href="#" class="customer-item">
-                                <img src="assets/customer-3.png" alt="customer 1">
-                                <div class="desc">
+                        </div>
+                        <div class="customer-item item">
+                            <a href="#">
+                                <div class="item-img">
+                                    <img src="assets/customer-3.png" alt="customer-3">
+                                </div>
+                                <div class="content-text">
                                     <h2>Thanh Thảo</h2>
-                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng 
-                                        và hạnh phúc khi được sử dụng sản phẩm của 82x, 
-                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum 
+                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng
+                                        và hạnh phúc khi được sử dụng sản phẩm của 82x,
+                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum
                                         dolor sit amet consectetur adipisicing elit. Dignissimos dolores
-                                         obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
-                                         <i class="fa-solid fa-quote-right"></i>
-                                        </p>
+                                        obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
                                 </div>
                             </a>
-
-                            <a href="#" class="customer-item">
-                                <img src="assets/customer-2.png" alt="customer 1">
-                                <div class="desc">
+                        </div>
+                        <div class="customer-item item">
+                            <a href="#">
+                                <div class="item-img">
+                                    <img src="assets/customer-2.png" alt="customer-2">
+                                </div>
+                                <div class="content-text">
                                     <h2>Hồ Ngọc Hà</h2>
-                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng 
-                                        và hạnh phúc khi được sử dụng sản phẩm của 82x, 
-                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum 
+                                    <p><i class="fa-solid fa-quote-left"></i> Tôi cảm thấy rất hài lòng
+                                        và hạnh phúc khi được sử dụng sản phẩm của 82x,
+                                        đem lại cho tôi một trải nghiệm sản phẩm vượt trội Lorem ipsum
                                         dolor sit amet consectetur adipisicing elit. Dignissimos dolores
-                                         obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
-                                         <i class="fa-solid fa-quote-right"></i>
-                                        </p>
+                                        obcaecati nesciunt inventore provident doloribus rem quibusdam natus!
+                                        <i class="fa-solid fa-quote-right"></i>
+                                    </p>
                                 </div>
                             </a>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <i class="fa-solid fa-arrow-left" id="cusprev-btn"></i>
-                        <div class="page-info">
-                            <span id="cuscurrent-page"></span> / <span id="custotal-pages"></span>
-                        </div>
-                        <i class="fa-solid fa-arrow-right" id="cusnext-btn"></i>
                     </div>
                 </div>
             </div>
@@ -387,6 +398,8 @@
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
